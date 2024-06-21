@@ -6,3 +6,4 @@ numpy
 keras
 tensorflow
 marisa-trie
+nltk
