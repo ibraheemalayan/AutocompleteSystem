@@ -5,3 +5,4 @@ pandas
 numpy
 keras
 tensorflow
+marisa-trie
