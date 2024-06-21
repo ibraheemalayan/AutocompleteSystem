@@ -70,7 +70,7 @@ inputField.addEventListener("input", async function (e) {
       suggestion_div.innerHTML =
         "<strong>" +
         suggested_options_arr[i].substr(0, lastWord.length) +
-        "</strong>";
+        "&zwj;</strong>";
       suggestion_div.innerHTML += suggested_options_arr[i].substr(
         lastWord.length
       );
