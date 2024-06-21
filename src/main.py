@@ -1,3 +1,4 @@
+from random import randint
 from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
@@ -7,32 +8,58 @@ from pydantic import BaseModel
 # sample suggestions for all letters
 suggestions = [
     "apple",
+    "address",
     "banana",
+    "ball",
     "cat",
+    "car",
     "dog",
+    "door",
     "elephant",
+    "egg",
     "fish",
+    "frog",
     "grape",
+    "goat",
     "hat",
+    "house",
     "ice",
+    "ink",
     "jacket",
+    "jelly",
     "kite",
+    "key",
     "lion",
+    "lemon",
     "mango",
+    "monkey",
     "nest",
+    "note",
     "orange",
+    "owl",
     "parrot",
+    "pen",
     "queen",
+    "quilt",
+    "rat",
     "rose",
     "sun",
+    "star",
+    "tree",
     "tiger",
     "umbrella",
     "van",
+    "vase",
+    "water",
     "watch",
     "xylophone",
+    "x-ray",
     "yak",
+    "yacht",
     "zebra",
+    "zoo",
 ]
+
 
 app = FastAPI()
 templates = Jinja2Templates(directory="frontend")
@@ -57,8 +84,14 @@ def predict_next_word(text_input: TextInput):
     last_word = words[-1] if words else ""
 
     # Very basic suggestion based on starting letters (replace with your logic)
-    suggestions = ["apple", "banana", "orange", "grape"]
-    return {"options": suggestions}
+    s = ["new word"]
+    # add 6 random words from suggestions to s
+    for i in range(6):
+        # random index
+        index = randint(0, len(suggestions) - 1)
+        s.append(suggestions[index])
+
+    return {"options": s}
 
 
 @app.post("/complete_word")
