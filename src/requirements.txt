@@ -1,0 +1,7 @@
+fastapi
+pydantic
+jinja2
+pandas
+numpy
+keras
+tensorflow
