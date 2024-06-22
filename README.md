@@ -12,7 +12,10 @@ Welcome to the LSTM Trie AutoComplete System repository! This project demonstrat
 
 ## Demo
 
-![Demo Video](./assets/autocomplete_demo.mp4)
+
+https://github.com/ibraheemalayan/AutocompleteSystem/assets/35265448/2d92e6a4-60c9-417c-bee0-e218bb22d73f
+
+
 
 ## Usage
 
