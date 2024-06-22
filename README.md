@@ -10,15 +10,17 @@ Welcome to the LSTM Trie AutoComplete System repository! This project demonstrat
 - Ibraheem Alyan
 - Feras Sandouka
 
+## Demo
+
+![Demo Video](./assets/autocomplete_demo.mp4)
 
 ## Usage
 
-Once the Flask application is running, you can access the web interface in your web browser. The interface allows you to input text and receive autocomplete suggestions powered by the LSTM model and trie structure.
+Once the FastAPI application is running, you can access the web interface in your web browser. The interface allows you to input text and receive autocomplete suggestions powered by the LSTM model and trie structure.
 
 ## Contributions
 
 We welcome contributions from the community. If you find any issues or have suggestions for improvements.
-
 
 ## Requirements
 
@@ -43,3 +45,4 @@ pip install fastapi pydantic jinja2 pandas numpy keras tensorflow marisa-trie nl
 
 
 
+```
