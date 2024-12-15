@@ -1,0 +1,12 @@
+
+fastapi
+pydantic
+jinja2
+pandas
+numpy
+keras
+tensorflow
+marisa-trie
+nltk
+scikit-learn
+keras_nlp
